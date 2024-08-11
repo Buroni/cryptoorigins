@@ -11,7 +11,7 @@
                 const noise = new Ishmael('noise-element');
                 const options = {
                     fromEmpty: false,
-                    delay: 5000,
+                    delay: 6000,
                     fps: 20,
                 };
                 noise.transition([
@@ -25,7 +25,6 @@
         body {
             background: black;
             height: 100vh;
-            margin: 0;
         }
 
         #video {
@@ -34,7 +33,6 @@
             bottom: 0;
             min-width: 100%;
             min-height: 100%;
-            margin: 0;
           }
 
         .content {
@@ -57,15 +55,11 @@
         }
 
         .banner {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
+            width: 30%;
             padding: 4rem;
-            background: black;
+            background: black url('./assets/static.png');
+            /* background: black; */
             border-radius: 10px;
-            opacity: 0.8;
         }
 
         p {
@@ -101,9 +95,9 @@
         }
 
         .rotate {
-            -webkit-animation:spin 70s linear infinite;
-            -moz-animation:spin 70s linear infinite;
-            animation:spin 70s linear infinite;
+            -webkit-animation:spin 30s linear infinite;
+            -moz-animation:spin 30s linear infinite;
+            animation:spin 30s linear infinite;
         }
 
         @-moz-keyframes spin { 
@@ -127,7 +121,7 @@
         <div class="content orbitron-600">
             <div class="banner">
             <div class="logo">
-                <img src="./assets/asset.png" width="200px" height="200px" class="rotate"
+                <img src="./assets/asset.png" width="200px" height="200px"
                 />
                 <h1 class="header-text" id="noise-element">COMING SOON</h1>
                 <div class="sm-tray">
